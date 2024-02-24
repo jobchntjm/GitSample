@@ -62,6 +62,7 @@ namespace GitSample
 
         private void button4_Click(object sender, EventArgs e)
         {
+            //小磯さんプッシュコメント
             try
             {
 
