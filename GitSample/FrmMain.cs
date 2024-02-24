@@ -59,5 +59,39 @@ namespace GitSample
                 txtResult.Text = "計算できません";
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                txtResult.Text = caliculationDivision(txtExpression1.Text, txtExpression2.Text).ToString();
+            }
+            catch (Exception ex)
+            {
+                txtResult.Text = "計算できません";
+            }
+
+        }
+
+        private double caliculationDivision(string text1, string text2) {
+
+            if (text1 == null)
+            {
+                text1 = "0";
+            }
+            if (text2 == null)
+            {
+                text2 = "0";
+            }
+
+            double bNum1 = double.Parse(text1);
+            double bNum2 = double.Parse(text2);
+
+
+
+            return bNum1 / bNum2;
+        
+        }
     }
 }
